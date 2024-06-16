@@ -19,7 +19,7 @@ body {
       display: none;
       position: absolute;
       right: 0;
-      width: 30%;
+      width: 40%;
       height: 300px;
       margin-top: 397px;
       background-color: $azul_escuro;
@@ -39,6 +39,7 @@ body {
           height: 30px;
           font-size: 18px;
           margin-left: 0;
+          align-self: center;
         }
       }
     }
