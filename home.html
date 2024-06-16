@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noisy Monitory</title>
+    <link rel="stylesheet" href="./styles/home.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 600px)"
+      href="./styles/home_cell.css"
+    />
+    <link rel="shortcut icon" href="./imgs/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar-centro">
+        <img src="./imgs/logo.png" alt="Logo Noisy Monitory" />
+        <div class="menu-btn" id="menuBtn" onclick="menu()">
+          <div class="menu-btn-burger"></div>
+        </div>
+        <div class="tudo">
+          <nav>
+            <span onclick="descer_list('inicio')">Início</span>
+            <span onclick="descer_list('proposta')">Sobre</span>
+            <span onclick="descer_list('vantagens')">Vantagens</span>
+            <span onclick="descer_list('solucao')">Solução</span>
+            <span onclick="descer_list('quem-somos')">Quem Somos</span>
+            <button onclick="descer_list('contato')" class="btn-contato">
+              Contato
+            </button>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div id="inicio">
+      <div class="inicio-texto">
+        <h1>
+          PLATAFORMA DE <br />MONITORAMENTO DE RUÍDOS <br />PARA FINS ACADÊMICOS
+        </h1>
+        <button onclick="descer('proposta')">Conheça o projeto</button>
+      </div>
+      <img src="./imgs/audicao.png" alt="" />
+    </div>
+
+    <div id="proposta">
+      <div class="proposta-imagem">
+        <img src="./imgs/aula.jpg" alt="Sala de aula" />
+      </div>
+      <div class="proposta-texto">
+        <h1>NOSSA PROPOSTA</h1>
+        <p>
+          Nosso foco é auxiliar as instituições de ensino a fazer uma melhor
+          administração dos ruídos gerados em sala de aula, com o intuito de
+          minimizar o desconforto que esses ruídos geram em alunos com algum
+          tipo de sensibilidade auditiva.
+          <br />
+          <br />
+          Nossa plataforma gera relatórios detalhados sobre os ruídos emitidos
+          em determinada aula, assim os gestores poderão analisar e tomar alguma
+          iniciativa com base nos dados gerados por nossa plataforma.
+        </p>
+        <button onclick="descer('vantagens')">Veja mais</button>
+      </div>
+    </div>
+
+    <div id="vantagens">
+      <h1>VANTAGENS</h1>
+      <div class="vantagens-lista">
+        <div>
+          <img src="./imgs/relatorio.png" alt="" />
+          <h3>VISÃO DETALHADA</h3>
+          <p>
+            Nossa plataforma proporciona uma vista detalhada e personalizada de
+            todas as informações necessárias para uma melhor administração.
+          </p>
+        </div>
+        <div>
+          <img src="./imgs/ensino.png" alt="" />
+          <h3>MELHORIA DO AMBIENTE ESCOLAR</h3>
+          <p>
+            Com o auxílio da nossa plataforma, as instituições poderão tomar
+            medidas para melhorar o ensino e aprendizagem dos alunos.
+          </p>
+        </div>
+        <div>
+          <img src="./imgs/acessibilidade.png" alt="" />
+          <h3>MAIOR ACESSIBILIDADE</h3>
+          <p>
+            Os alunos com sensibilidades auditivas poderão ter um melhor
+            aprendizado em sala de aula.
+          </p>
+        </div>
+        <div>
+          <img src="./imgs/lucro.png" alt="" />
+          <h3>MAIOR CONTROLE</h3>
+          <p>
+            Os gestores terão um controle total das salas desejadas, podendo
+            saber, por exemplo, qual a média de ruídos emitidos em determinada
+            aula.
+          </p>
+        </div>
+      </div>
+      <button onclick="descer('solucao')">Veja mais</button>
+    </div>
+
+    <div id="solucao">
+      <h1>SOLUÇÃO</h1>
+      <div class="solucao-lista">
+        <div class="solucao-lista-bloco">
+          <img src="./imgs/escola.jpg" alt="" />
+          <div class="solucao-lista-bloco-texto">
+            <h3>PARA QUEM É INDICADO?</h3>
+            <p>
+              Nossa plataforma é indicada principalmente para instituições de
+              ensino, mas nada impede a utilização em outros meios, como
+              ambientes de colaboração em equipe, empresas, indústrias, entre
+              outros locais que necessitem de alguma gestão dos ruídos
+              ambientes.
+            </p>
+          </div>
+        </div>
+        <div class="solucao-lista-bloco">
+          <img src="./imgs/notebook.jpg" alt="" />
+          <div class="solucao-lista-bloco-texto">
+            <h3>COMO FAREMOS ISSO?</h3>
+            <p>
+              Todas as funcionalidades estão concentradas em nossa plataforma,
+              nosso foco está na fácil usabilidade e responsividade para melhor
+              adequação da tecnologia no ambiente escolar, podendo ser utilizada
+              por computadores e smartphones, além de termos sempre um
+              desenvolvedor ativo para qualquer dúvida ou melhoria necessária.
+            </p>
+          </div>
+        </div>
+        <div class="solucao-lista-bloco">
+          <img src="./imgs/celular.jpg" alt="" />
+          <div class="solucao-lista-bloco-texto">
+            <h3>QUAIS OS MATERIAIS NECESSÁRIOS PARA COMEÇAR?</h3>
+            <p>
+              Para a utilização é necessário apenas um computador ou smartphone,
+              pois a plataforma usará como fonte de áudio o próprio microfone do
+              dispositivo, assim, com essa captação, além da possibilidade de
+              monitoramento em tempo real, a plataforma poderá gerar e armazenar
+              um relatório detalhado ao final da aula, tudo personalizado
+              conforme a necessidade do gestor.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button onclick="descer('quem-somos')">Veja mais</button>
+    </div>
+
+    <div id="quem-somos">
+      <h1>QUEM SOMOS</h1>
+      <p>
+        O projeto Noisy Monitory surgiu primeiramente como um simples aparelho
+        de monitoramento de ruídos, porém, após a junção do nosso grupo de
+        amigos, pensamos como utilizar nossa ideia para auxiliar as instituições
+        de ensino.
+      </p>
+      <p class="quem-somos-bold">
+        Pensando nisso, surgiu a plataforma Noisy Monitory, uma plataforma
+        completa dedicada a auxiliar as instituições de ensino a monitorar de
+        forma inteligente os ruídos emitidos em sala de aula.
+      </p>
+      <p>
+        Além do nosso grupo, nossa ideia só se tornou possível com o apoio de
+        programas voltados para o empreendedorismo e o ambiente de inovação do
+        Estado da Paraíba.
+      </p>
+      <p class="quem-somos-bold">
+        Somos quatro amigos, apaixonados por tecnologia, inovação e educação.
+        Acreditamos no poder transformador que a educação possui.
+      </p>
+      <button onclick="descer('contato')">Fale conosco</button>
+    </div>
+
+    <div id="contato">
+      <h1>CONTATO</h1>
+      <div class="form">
+        <label for="">
+          <span>Nome</span><input type="text" autocomplete="off" />
+        </label>
+        <label for="">
+          <span>Cargo</span><input type="text" autocomplete="off" />
+        </label>
+        <label for="">
+          <span>E-mail</span><input type="text" autocomplete="off" />
+        </label>
+        <label for="">
+          <span>Telefone</span
+          ><input type="text" id="telefone" autocomplete="off" />
+        </label>
+      </div>
+      <button>ENVIAR</button>
+    </div>
+
+    <div class="email">
+      <h4>noysimonitory@outlook.com</h4>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script>
+      
+      const descer_list = (div) => {
+        descer(div)
+        menu()
+      }
+      
+      const descer = (div) => {
+        let myDiv = document.getElementById(div);
+        let offsetTop = myDiv.offsetTop;
+        window.scrollTo({
+          top: offsetTop - 96,
+          behavior: "smooth",
+        });
+      };
+
+      const menu = () => {
+        if ($("#menuBtn").css("display") == "block") {
+          $("#menuBtn").toggleClass("open");
+
+          let list = $(".tudo");
+          if (list.is(":visible")) {
+            list.slideUp(200);
+            $("body").css({ overflow: "auto", "pointer-events": "all" });
+          } else {
+            list.slideDown(200);
+            $("body").css({ overflow: "hidden", "pointer-events": "none" });
+            $(".navbar").css("pointer-events", "all");
+          }
+        }
+      };
+
+      $("#telefone").mask("(00) 0 0000-0000");
+    </script>
+  </body>
+</html>
